@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pnvmvmKFqkXWulAIX1bNU9s/gM/2bOLuyK2QxscizWLPVnqQP53tkl4vqMn79ZG8RZu49coJcrLkjSrkm3W/Qg==",
+  "dgSpecHash": "yfki0EyRkxFFJtN6JmWEMlGbX0WVfbTFSENwyGGAm1kiO9RUK7VV1bHpkhUvE/gVVJ1RQQ4Lx6uBllO+Rr+iRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alan\\Desktop\\Tecnologias Computacionales\\6 Semestre\\Tecnologias para la integracion de soluciones\\Practica2\\practica02\\practica02.csproj",
+  "projectFilePath": "C:\\Users\\Alan\\78927-mat\\Practica2\\practica02\\practica02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alan\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Alan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
