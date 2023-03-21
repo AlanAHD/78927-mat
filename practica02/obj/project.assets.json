@@ -976,11 +976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Desktop\\Tecnologias Computacionales\\6 Semestre\\Tecnologias para la integracion de soluciones\\Practica2\\practica02\\practica02.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\78927-mat\\practica02\\practica02.csproj",
       "projectName": "practica02",
-      "projectPath": "C:\\Users\\Alan\\Desktop\\Tecnologias Computacionales\\6 Semestre\\Tecnologias para la integracion de soluciones\\Practica2\\practica02\\practica02.csproj",
+      "projectPath": "C:\\Users\\Alan\\78927-mat\\practica02\\practica02.csproj",
       "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Desktop\\Tecnologias Computacionales\\6 Semestre\\Tecnologias para la integracion de soluciones\\Practica2\\practica02\\obj\\",
+      "outputPath": "C:\\Users\\Alan\\78927-mat\\practica02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alan\\AppData\\Roaming\\NuGet\\NuGet.Config"
