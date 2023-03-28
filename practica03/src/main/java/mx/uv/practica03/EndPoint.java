@@ -21,7 +21,7 @@ import https.t4is_uv_mx.saludos.VerResponse;
 @Endpoint
 public class EndPoint{
 
-    List<String> msj = new ArrayList<String>();
+    List<String> mensaje = new ArrayList<String>();
     String nombres;
 
     @PayloadRoot(localPart = "SaludarRequest", namespace = "https://t4is.uv.mx/saludos")
@@ -29,7 +29,7 @@ public class EndPoint{
     public SaludarResponse Saludar(@RequestPayload SaludarRequest peticion){
         SaludarResponse respuesta = new SaludarResponse();
         respuesta.setRespuesta("Bienvenido: "+peticion.getNombre());
-        msj.add(peticion.getNombre());
+        mensaje.add(peticion.getNombre());
         return respuesta;
     }
 
@@ -37,11 +37,11 @@ public class EndPoint{
     @ResponsePayload
     public BuscarResponse Saludar(@RequestPayload BuscarRequest peticion){
         BuscarResponse respuesta = new BuscarResponse();
-        if(msj == null || msj.size() == 0)
+        if(mensaje == null || mensaje.size() == 0)
         {
             respuesta.setRespuesta("No hay nada");
         }else{
-            respuesta.setRespuesta(msj.get(peticion.getId()));
+            respuesta.setRespuesta(mensaje.get(peticion.getId()));
         }
         return respuesta;
     }
@@ -50,12 +50,12 @@ public class EndPoint{
     @ResponsePayload
     public ModificarResponse Modificar(@RequestPayload ModificarRequest peticion){
         ModificarResponse respuesta = new ModificarResponse();
-        if(msj == null || msj.size() == 0)
+        if(mensaje == null || mensaje.size() == 0)
         {
             respuesta.setRespuesta("No hay nada");
         }else{
-            msj.set(peticion.getId(),peticion.getNombre());
-            respuesta.setRespuesta("La posición: "+peticion.getId()+" se modifico con el nombre: "+msj.get(peticion.getId()));
+            mensaje.set(peticion.getId(),peticion.getNombre());
+            respuesta.setRespuesta("La posición: "+peticion.getId()+" se modifico con el nombre: "+mensaje.get(peticion.getId()));
         }
         return respuesta;
     }
@@ -64,12 +64,12 @@ public class EndPoint{
     @ResponsePayload
     public VerResponse Modificar(){
         VerResponse respuesta = new VerResponse();
-        if(msj == null || msj.size() == 0)
+        if(mensaje == null || mensaje.size() == 0)
         {
             respuesta.setRespuesta("No hay nada");
         }else{
             nombres = "Saludo a: ";
-            for(String n :msj) {
+            for(String n :mensaje) {
                 nombres += n;
                 nombres += ", ";
             }
@@ -82,12 +82,12 @@ public class EndPoint{
     @ResponsePayload
     public EliminarResponse Eliminar(@RequestPayload EliminarRequest peticion){
         EliminarResponse respuesta = new EliminarResponse();
-        if(msj == null || msj.size() == 0)
+        if(mensaje == null || mensaje.size() == 0)
         {
             respuesta.setRespuesta("No hay nada");
         }else{
-            String aux = msj.get(peticion.getId());
-            msj.remove(peticion.getId());
+            String aux = mensaje.get(peticion.getId());
+            mensaje.remove(peticion.getId());
             respuesta.setRespuesta("Se elimino el saludo: "+aux);
         }
         return respuesta;
